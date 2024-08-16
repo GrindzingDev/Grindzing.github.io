@@ -1,0 +1,20 @@
+<Window x:Class="ProfilePictureOverlay.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Profile Picture Overlay" Height="450" Width="800">
+    <Grid Background="White">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Select Your Default Profile Picture" FontSize="20" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+            
+            <Button Content="Choose File" Click="ChooseFile_Click" Width="200" Height="40" Margin="0,0,0,20"/>
+
+            <Image Name="ProfileImage" Width="300" Height="300" Margin="0,0,0,20"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="overlay1.png" Width="80" Height="80" Margin="10" MouseDown="Overlay_Click"/>
+                <Image Source="overlay2.png" Width="80" Height="80" Margin="10" MouseDown="Overlay_Click"/>
+                <Image Source="overlay3.png" Width="80" Height="80" Margin="10" MouseDown="Overlay_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
